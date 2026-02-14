@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - CHAPTER TWO</title>
+  <meta name="description" content="Get in touch with Chapter Two. We're happy to answer questions about any of our pieces.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="siteHeader"></div>
+  <div id="siteNav"></div>
+
+  <main class="main-content">
+    <div class="page-content">
+      <div class="contact-layout">
+
+        <div class="contact-info">
+          <h2 class="page-title">GET IN TOUCH</h2>
+          <p class="contact-lead">We'd love to hear from you. Whether you have a question about a specific piece, need help with delivery, or are looking for something particular, please don't hesitate to get in touch.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <h4 class="contact-detail-label">EMAIL</h4>
+              <a href="mailto:hello@chaptertwo.co.uk">hello@chaptertwo.co.uk</a>
+            </div>
+            <div class="contact-detail">
+              <h4 class="contact-detail-label">TELEPHONE</h4>
+              <a href="tel:+441234567890">+44 (0) 1234 567 890</a>
+            </div>
+            <div class="contact-detail">
+              <h4 class="contact-detail-label">LOCATION</h4>
+              <p>United Kingdom</p>
+            </div>
+            <div class="contact-detail">
+              <h4 class="contact-detail-label">FOLLOW US</h4>
+              <a href="https://instagram.com" target="_blank" rel="noopener">@chaptertwo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Name *</label>
+              <input class="form-input" type="text" id="contactName" name="name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email *</label>
+              <input class="form-input" type="email" id="contactEmail" name="email" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactPhone">Phone</label>
+              <input class="form-input" type="tel" id="contactPhone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject</label>
+              <select class="form-input" id="contactSubject" name="subject">
+                <option value="">Select a subject...</option>
+                <option value="product-enquiry">Product Enquiry</option>
+                <option value="delivery">Delivery Question</option>
+                <option value="sourcing">Sourcing Request</option>
+                <option value="general">General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message *</label>
+              <textarea class="form-input form-textarea" id="contactMessage" name="message" rows="6" required></textarea>
+            </div>
+            <button class="pdp-add-to-cart" type="submit">SEND MESSAGE</button>
+          </form>
+          <p class="form-success" id="formSuccess" style="display:none;">Thank you for your message. We'll get back to you shortly.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="components.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

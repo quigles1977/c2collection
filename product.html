@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product - C2 COLLECTION</title>
+  <title>Product - CHAPTER TWO</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,48 +11,15 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <a href="index.html" class="logo-link">
-          <h1 class="logo-heading">CHAPTER TWO</h1>
-          <div class="logo-text">
-            <span class="logo-tagline">ANTIQUES & DECORATIVE</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html">ABOUT</a></li>
-        <li><a href="index.html" class="nav-active">*NEW ARRIVALS*</a></li>
-        <li><a href="index.html">COLLECTIONS</a></li>
-        <li><a href="https://instagram.com" target="_blank" rel="noopener">INSTAGRAM</a></li>
-        <li><a href="index.html">CONTACT</a></li>
-        <li><a href="index.html">T&C's</a></li>
-      </ul>
-      <a href="https://instagram.com" target="_blank" rel="noopener" class="nav-instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-          <circle cx="12" cy="12" r="5"/>
-          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
-        </svg>
-      </a>
-    </div>
-  </nav>
+  <div id="siteHeader"></div>
+  <div id="siteNav"></div>
 
   <!-- Breadcrumb -->
   <div class="breadcrumb">
     <div class="breadcrumb-inner">
       <a href="index.html">Home</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="index.html">New Arrivals</a>
+      <a href="collections.html">Collections</a>
       <span class="breadcrumb-sep">/</span>
       <span class="breadcrumb-current" id="breadcrumbTitle">Product</span>
     </div>
@@ -66,37 +33,26 @@
         <div class="pdp-image-main" id="pdpMainImage">
           <img src="" alt="" id="pdpMainImg" />
         </div>
-        <div class="pdp-image-thumbs" id="pdpThumbs">
-          <!-- Thumbnail images rendered by JS -->
-        </div>
+        <div class="pdp-image-thumbs" id="pdpThumbs"></div>
       </div>
 
       <!-- Right: Product info -->
       <div class="pdp-info">
-        <!-- Vendor / Product type -->
         <p class="pdp-vendor" id="pdpVendor"></p>
-
-        <!-- Title -->
         <h2 class="pdp-title" id="pdpTitle"></h2>
 
-        <!-- Price -->
         <div class="pdp-price-block">
           <span class="pdp-price" id="pdpPrice"></span>
           <span class="pdp-compare-price" id="pdpComparePrice"></span>
         </div>
 
-        <!-- Availability badge -->
         <p class="pdp-availability" id="pdpAvailability"></p>
 
-        <!-- Variant selector (shown only if product has multiple variants) -->
         <div class="pdp-variants" id="pdpVariants" style="display:none;">
           <label class="pdp-label" for="variantSelect">Options</label>
-          <select class="pdp-select" id="variantSelect">
-            <!-- Options rendered by JS -->
-          </select>
+          <select class="pdp-select" id="variantSelect"></select>
         </div>
 
-        <!-- Quantity selector -->
         <div class="pdp-quantity">
           <label class="pdp-label" for="qtyInput">Quantity</label>
           <div class="pdp-qty-control">
@@ -106,19 +62,13 @@
           </div>
         </div>
 
-        <!-- Add to Cart -->
         <button class="pdp-add-to-cart" id="addToCartBtn">ADD TO CART</button>
-
-        <!-- Buy Now (direct checkout) -->
         <button class="pdp-buy-now" id="buyNowBtn">BUY IT NOW</button>
 
-        <!-- SKU -->
         <p class="pdp-sku" id="pdpSku"></p>
 
-        <!-- Description -->
         <div class="pdp-description" id="pdpDescription"></div>
 
-        <!-- Product details / metafields accordion -->
         <div class="pdp-details">
           <button class="pdp-accordion-btn" data-target="detailsDimensions">
             <span>Dimensions</span>
@@ -154,10 +104,8 @@
           </div>
         </div>
 
-        <!-- Tags -->
         <div class="pdp-tags" id="pdpTags"></div>
 
-        <!-- Share / Social -->
         <div class="pdp-share">
           <span class="pdp-share-label">Share</span>
           <a href="#" class="pdp-share-link" id="shareTwitter" aria-label="Share on Twitter">
@@ -173,23 +121,18 @@
       </div>
     </div>
 
-    <!-- "You may also like" section -->
+    <!-- Related -->
     <section class="pdp-related">
       <h3 class="pdp-related-heading">You May Also Like</h3>
-      <div class="product-grid product-grid--3col" id="relatedProducts">
-        <!-- Rendered by JS -->
-      </div>
+      <div class="product-grid product-grid--3col" id="relatedProducts"></div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>&copy; 2026 C2 Collection - Antiques & Decorative</p>
-    </div>
-  </footer>
+  <div id="siteFooter"></div>
 
   <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="components.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

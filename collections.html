@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections - CHAPTER TWO</title>
+  <meta name="description" content="Browse our full collection of antiques and decorative pieces. Filter by furniture, tables, mirrors, seating and more.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="siteHeader"></div>
+  <div id="siteNav"></div>
+
+  <main class="main-content">
+    <h2 class="page-title" style="text-align:center;">COLLECTIONS</h2>
+    <p class="page-subtitle">Browse our full range of antiques and decorative pieces.</p>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <!-- Other filter buttons rendered by JS from productTypes -->
+    </div>
+
+    <!-- Sort -->
+    <div class="sort-bar">
+      <label class="sort-label" for="sortSelect">Sort by</label>
+      <select class="pdp-select sort-select" id="sortSelect">
+        <option value="default">Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="title-asc">Name: A - Z</option>
+        <option value="title-desc">Name: Z - A</option>
+      </select>
+    </div>
+
+    <!-- Product count -->
+    <p class="collection-count" id="collectionCount"></p>
+
+    <div class="product-grid" id="collectionGrid">
+      <!-- Rendered by JS -->
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="components.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

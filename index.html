@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C2 COLLECTION - Antiques & Decorative</title>
+  <title>CHAPTER TWO - Antiques & Decorative</title>
+  <meta name="description" content="Curated antiques and decorative pieces for the modern home. Hand-selected furniture, mirrors, lighting and objects.">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,57 +12,53 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <a href="/" class="logo-link">
-          <h1 class="logo-heading">CHAPTER TWO</h1>
-          <div class="logo-text">
-            <span class="logo-tagline">ANTIQUES & DECORATIVE</span>
-          </div>
-        </a>
+  <div id="siteHeader"></div>
+  <div id="siteNav"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="images/01-french-commode-mirror.jpg" alt="Curated antiques by Chapter Two" />
+      </div>
+      <div class="hero-overlay">
+        <p class="hero-subtitle">NEW ARRIVALS</p>
+        <h2 class="hero-title">Curated Antiques<br>for the Modern Home</h2>
+        <a href="collections.html" class="hero-btn">SHOP THE COLLECTION</a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Navigation -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <ul class="nav-links">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/about">ABOUT</a></li>
-        <li><a href="/newarrivals" class="nav-active">*NEW ARRIVALS*</a></li>
-        <li><a href="/collections">COLLECTIONS</a></li>
-        <li><a href="https://instagram.com" target="_blank" rel="noopener">INSTAGRAM</a></li>
-        <li><a href="/contact">CONTACT</a></li>
-        <li><a href="/terms">T&C's</a></li>
-      </ul>
-      <a href="https://instagram.com" target="_blank" rel="noopener" class="nav-instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-          <circle cx="12" cy="12" r="5"/>
-          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
-        </svg>
-      </a>
-    </div>
-  </nav>
-
-  <!-- Main Content: Product Grid -->
+  <!-- Featured Products -->
   <main class="main-content">
+    <h2 class="section-heading">NEW ARRIVALS</h2>
     <div class="product-grid" id="productGrid">
-      <!-- Products will be rendered here by JS -->
+      <!-- Rendered by JS -->
+    </div>
+    <div class="section-cta">
+      <a href="collections.html" class="btn-outline">VIEW ALL PIECES</a>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>&copy; 2026 C2 Collection - Antiques & Decorative</p>
+  <!-- About teaser -->
+  <section class="home-about">
+    <div class="home-about-inner">
+      <div class="home-about-image">
+        <img src="images/08-carved-oak-coffer.jpg" alt="Styled antique interior" />
+      </div>
+      <div class="home-about-text">
+        <h3 class="home-about-title">THE CHAPTER TWO STORY</h3>
+        <p>Every piece in our collection has been hand-selected for its character, craftsmanship and beauty. We believe antiques deserve a second chapter -- brought into modern homes where they can be appreciated, used and loved for generations to come.</p>
+        <a href="about.html" class="btn-text">READ MORE &rarr;</a>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <div id="siteFooter"></div>
 
   <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="components.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
