@@ -1477,6 +1477,19 @@ img {
     position: static;
     transform: none;
   }
+
+  .nav-instagram {
+    display: none;
+  }
+
+  .nav-cart svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-right {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 480px) {
