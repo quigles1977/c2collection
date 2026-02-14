@@ -674,7 +674,7 @@ img {
 .hero {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px 0;
 }
 
 .hero-inner {
