@@ -239,8 +239,7 @@ img {
 
 /* --- Gallery --- */
 .pdp-gallery {
-  position: sticky;
-  top: 20px;
+  position: static;
 }
 
 .pdp-image-main {
@@ -689,10 +688,6 @@ img {
   .pdp {
     grid-template-columns: 1fr;
     gap: 28px;
-  }
-
-  .pdp-gallery {
-    position: static;
   }
 
   .pdp-title {
