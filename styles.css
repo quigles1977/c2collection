@@ -396,11 +396,11 @@ img {
 }
 
 .pdp-qty-btn {
-  width: 44px;
-  height: 44px;
+  width: 28px;
+  height: 28px;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 13px;
   cursor: pointer;
   color: #000;
   display: flex;
@@ -415,8 +415,8 @@ img {
 }
 
 .pdp-qty-input {
-  width: 56px;
-  height: 44px;
+  width: 34px;
+  height: 28px;
   text-align: center;
   border: none;
   border-left: 1px solid #ddd;
