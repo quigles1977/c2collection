@@ -45,7 +45,10 @@
     el.innerHTML =
       '<nav class="site-nav">' +
         '<div class="nav-inner">' +
-          '<ul class="nav-links">' +
+          '<button class="nav-burger" id="navBurger" aria-label="Toggle menu">' +
+            '<span></span><span></span><span></span>' +
+          '</button>' +
+          '<ul class="nav-links" id="navLinks">' +
             '<li><a href="index.html"' + navClass("index.html") + '>HOME</a></li>' +
             '<li><a href="about.html"' + navClass("about.html") + '>ABOUT</a></li>' +
             '<li><a href="collections.html"' + navClass("collections.html") + '>COLLECTIONS</a></li>' +
@@ -72,6 +75,16 @@
           '</div>' +
         '</div>' +
       '</nav>';
+
+    // Burger toggle
+    var burger = document.getElementById("navBurger");
+    var links = document.getElementById("navLinks");
+    if (burger && links) {
+      burger.addEventListener("click", function () {
+        burger.classList.toggle("open");
+        links.classList.toggle("open");
+      });
+    }
   }
 
   /* ===== Footer ===== */
